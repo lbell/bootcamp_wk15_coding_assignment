@@ -29,8 +29,7 @@ export default function RecordRow({
     if (id === "newRecord") {
       delete recordData.id;
       addRecord(typedData);
-      setRecordData({ id: "newRecord" });
-      setDangerRose({ id: "newRecord", polys: {} });
+      forceUpdate();
     } else {
       updateRecord(id, typedData);
       forceUpdate();

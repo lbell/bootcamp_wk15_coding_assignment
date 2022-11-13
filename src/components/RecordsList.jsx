@@ -3,14 +3,10 @@ import "./RecordsList.css";
 import RecordRow from "./RecordRow";
 
 /**
- * Displays a list of existing records, and adds a blank record at the end for 
+ * Displays a list of existing records, and adds a blank record at the end for
  * adding new data.
  */
-export default function RecordsList({
-  allRecords,
-  setAllRecords,
-  forceUpdate,
-}) {
+export default function RecordsList({ allRecords, forceUpdate }) {
   return (
     <div id="existing-record">
       <h2>Current Records</h2>
