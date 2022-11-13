@@ -1,0 +1,35 @@
+/* Styling needed to keep SVG bounded inside its container */
+.danger-rose-container {
+  position: relative;
+  height: 100%;
+}
+
+.danger-rose-svg {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.rose-poly {
+  fill: #b9b9b9;
+  stroke-width: 2;
+  stroke: white;
+}
+
+.rose-poly.red {
+  fill: red;
+}
+.rose-poly.green {
+  fill: green;
+}
+.rose-poly.yellow {
+  fill: yellow;
+}
+.rose-poly.orange {
+  fill: orange;
+}
+
+.rose-poly-active:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
