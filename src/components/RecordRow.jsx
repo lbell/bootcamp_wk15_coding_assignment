@@ -27,8 +27,13 @@ export default function RecordRow({
     recordData.danger_rose = JSON.stringify(dangerRose.polys);
     const typedData = typeData(recordData);
     if (id === "newRecord") {
-      delete recordData.id;
+      delete typedData.id;
       addRecord(typedData);
+      setRecordData({ id: "newRecord" });
+      setDangerRose({
+        id: record.id,
+        polys: record.polys,
+      });
       forceUpdate();
     } else {
       updateRecord(id, typedData);
